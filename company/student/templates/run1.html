@@ -1,0 +1,30 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{%static 'run1.css'%}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Page</title>
+</head>
+<body>
+    <div class="center">
+        <h1>REGESTRATION FORM</h1>
+        <form action="{% url 'myfun2'%}" method="POST">
+            {% csrf_token %}
+            <input type="text" name="name" placeholder="enter your name"><br>
+            <input type="email" name="email" placeholder="email"><br>
+            <input type="mobile" name="mobile" placeholder="mobile"><br>
+            <input type="submit" value="submit">
+
+        </form>
+        <div class="center" id="one">
+        <a href="{% url 'read' %}">
+            <b>
+                SHOW DATA
+            </b>
+        </a>
+         </div>
+    </div>
+</body>
+</html>

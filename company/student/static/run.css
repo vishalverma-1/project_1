@@ -1,0 +1,21 @@
+.kk{
+    width: 1000px;
+    height: 50px;
+    font-size: 50px;
+    background-color: black;
+    color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    background-image: url(images/IMG_20230410_153910.jpg);
+    background-size: cover;
+    
+    
+}
